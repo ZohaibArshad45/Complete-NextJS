@@ -73,6 +73,30 @@ export default function Home() {
           Font Optimization
         </button>
 
+        <button onClick={() => navLink('/development-production')} className="bg-rose-500 hover:bg-rose-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Development vs Production
+        </button>
+
+        <button onClick={() => navLink('/dynamic-metadata')} className="bg-violet-500 hover:bg-violet-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Dynamic Metadata
+        </button>
+
+        <button onClick={() => navLink('/script-components')} className="bg-emerald-500 hover:bg-emerald-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Script Components
+        </button>
+
+        <button onClick={() => navLink('/loader-withAPI')} className="bg-blue-700 hover:bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Loader | Show loading
+        </button>
+
+        <button onClick={() => navLink('/Static-Assets')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Static-Assets
+        </button>
+
+        <button onClick={() => navLink('/static-html-page')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Static Html Page
+        </button>
+
 
       </div>
     </div>
