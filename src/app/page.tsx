@@ -30,6 +30,10 @@ export default function Home() {
           <Link href="/learnEventFunctionStates">Learn Event & State</Link>
         </div>
 
+        <div className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          <Link href="/learnLinkNavigation">Learn Navigation</Link>
+        </div>
+
 
       </div>
     </div>
