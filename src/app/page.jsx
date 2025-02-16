@@ -7,9 +7,9 @@ export default function Home() {
 
   const router = useRouter();
 
-  // const navLink = (nav)=>{
-  //   router.push(nav)
-  // }
+  const navLink = (nav)=>{
+    router.push(nav)
+  }
 
 
   return (
@@ -47,6 +47,31 @@ export default function Home() {
         <div onClick={() => router.push('/catch-all-routing')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Catch All Routing
         </div>
+
+        <button onClick={() => router.push('/error-not-found-page')} className="bg-gray-600 hover:bg-gray-800 text-white py-3 px-6 rounded-lg shadow-md transition">
+          404 Error
+        </button>
+
+        
+        <button onClick={() => router.push('/middleware')} className="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Middleware
+        </button>
+
+        <button onClick={() => router.push('/learn-ClientSideDataFetch')} className="bg-teal-500 hover:bg-teal-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Client-Side API Fetch
+        </button>
+
+        <button onClick={() => navLink('/learn-ServerSiderDataFetch')} className="bg-indigo-500 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Server-Side API Fetch
+        </button>
+
+        <button onClick={() => navLink('/learn-image-Optimization')} className="bg-cyan-500 hover:bg-cyan-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Image Optimization
+        </button>
+
+        <button onClick={() => navLink('/learn-font-optomization')} className="bg-lime-500 hover:bg-lime-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Font Optimization
+        </button>
 
 
       </div>
