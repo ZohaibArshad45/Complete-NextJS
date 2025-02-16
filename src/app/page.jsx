@@ -97,6 +97,10 @@ export default function Home() {
         Static Html Page
         </button>
 
+        <button onClick={() => navLink('/static-side-generation')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Static Side Generation SSG
+        </button>
+
 
       </div>
     </div>
