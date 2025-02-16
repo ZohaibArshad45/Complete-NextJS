@@ -14,9 +14,11 @@ export default function Home() {
 
   return (
     <div className=" flex flex-col items-center bg-gray-100 p-6 pb-14">
+
       <h1 className="font-extrabold text-blue-700 text-4xl mb-8 drop-shadow-md">
         🚀 Home Page
       </h1>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-3xl">
         <div className="bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/react-vs-next">React vs Next JS</Link>
@@ -32,6 +34,10 @@ export default function Home() {
 
         <div className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/learnLinkNavigation">Learn Navigation</Link>
+        </div>
+
+        <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          <Link href="/nested-routing">Nested Routing</Link>
         </div>
 
 
