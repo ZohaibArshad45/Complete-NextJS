@@ -1,11 +1,11 @@
 'use client'
 import Link from "next/link";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 
 export default function Home() {
 
-  // const router = useRouter();
+  const router = useRouter();
 
   // const navLink = (nav)=>{
   //   router.push(nav)
@@ -38,6 +38,14 @@ export default function Home() {
 
         <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/nested-routing">Nested Routing</Link>
+        </div>
+
+        <div onClick={() => router.push('/dynamic-routes')} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Dynamic Routes
+        </div>
+
+        <div onClick={() => router.push('/catch-all-routing')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Catch All Routing
         </div>
 
 
