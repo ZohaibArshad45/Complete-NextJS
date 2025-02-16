@@ -1,65 +1,66 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const LearnEventFunctionState = () => {
-
-  let enventcode = `
-  <button onClick={() => alert("Hello!")} >
+  // Code snippets
+  let eventCode = `
+  <button onClick={() => alert("Hello!")}>
       Event
-  </button>`
+  </button>`;
 
-  let functioncode = `
-    // Function without parameter
+  let functionCode = `
+  // Function without parameter
   const handleClick = () => {
-    alert("Learn About Function")
+    alert("Learn About Function");
   }
 
-<button onClick={handleClick}>
+  <button onClick={handleClick}>
     Function without parameter
-</button>`
+  </button>`;
 
-  let functionWithParametercode = `
-    // Function with parameter
+  let functionWithParameterCode = `
+  // Function with parameter
   const handleClickWithParam = (name) => {
-    alert("Learn About Function with parameter:" + name})
+    alert("Learn About Function with parameter: " + name);
   }
 
-<button onClick={() => handleClickWithParam('Zohaib')}">
-  Function with parameter
-</button>`
+  <button onClick={() => handleClickWithParam('Zohaib')}>
+    Function with parameter
+  </button>`;
 
-  let statecode = `
+  let stateCode = `
   // State
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(0);
 
-<div>
-    <p>{number}</p>
-    <button  onClick={() => setNumber((prev) => prev + 1)}>
-      ➕ Increase
-    </button>
+  <div>
+      <p>{number}</p>
+      <button onClick={() => setNumber((prev) => prev + 1)}>
+        ➕ Increase
+      </button>
 
-    <button onClick={() => setNumber((prev) => Math.max(0, prev - 1))}>
-      ➖ Decrease
-    </button>
-</div>`
-
+      <button onClick={() => setNumber((prev) => Math.max(0, prev - 1))}>
+        ➖ Decrease
+      </button>
+  </div>`;
 
   // Function without parameter
   const handleClick = () => {
-    alert("Learn About Function")
-  }
+    alert("Learn About Function");
+  };
 
   // Function with parameter
   const handleClickWithParam = (name) => {
-    alert(`Learn About Function with parameter: ${name}`)
-  }
+    alert(`Learn About Function with parameter: ${name}`);
+  };
 
   // State
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(0);
 
   return (
     <div className='flex flex-col items-center py-10 gap-6 bg-gray-100 min-h-screen px-4'>
-      <h1 className='text-3xl font-bold text-blue-700 text-center'>🚀 Learn Event Functions & State</h1>
+      <h1 className='text-3xl font-bold text-blue-700 text-center'>
+        🚀 Learn Event Functions & State
+      </h1>
       <p className="text-gray-600 text-center max-w-lg">
         📌 Understand event functions and React state management with simple examples.
       </p>
@@ -72,8 +73,7 @@ const LearnEventFunctionState = () => {
       </button>
 
       <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋
-        <code className=' w-full overflow-x-auto'> {enventcode}</code>
+        Code:📋 <code>{eventCode}</code>
       </pre>
 
       {/* ========== Function without parameter =========== */}
@@ -84,10 +84,8 @@ const LearnEventFunctionState = () => {
       </button>
 
       <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋
-        <code className=' w-full overflow-x-auto'> {functioncode}</code>
+        Code:📋 <code>{functionCode}</code>
       </pre>
-
 
       {/* ===============  Function with parameter ============= */}
       <button
@@ -97,8 +95,7 @@ const LearnEventFunctionState = () => {
       </button>
 
       <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋
-        <code className=' w-full overflow-x-auto'> {functionWithParametercode}</code>
+        Code:📋 <code>{functionWithParameterCode}</code>
       </pre>
 
       {/* ================== State Display =============== */}
@@ -122,12 +119,11 @@ const LearnEventFunctionState = () => {
       </div>
 
       <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋
-        <code className=' w-full overflow-x-auto'> {statecode}</code>
+        Code:📋 <code>{stateCode}</code>
       </pre>
 
     </div>
-  )
-}
+  );
+};
 
-export default LearnEventFunctionState
+export default LearnEventFunctionState;
