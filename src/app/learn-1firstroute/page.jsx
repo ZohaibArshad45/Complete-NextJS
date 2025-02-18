@@ -3,26 +3,27 @@ import Link from 'next/link';
 
 const Learn1FirstRoute = () => {
   const FAPIROUTER = `
-  // export const GET = ()=>{
-  //     return new Response("he")
-  // }
-  
-  import { NextResponse } from "next/server"
-  
-  export const GET = () => {
-      return NextResponse.json([
-        {
-          name: 'Zohaib',
-          age: 24,
-          location: "Bahawalpur"
-        },
-        {
-          name: 'Ali',
-          age: 24,
-          location: "Bahawalpur"
-        }
-      ])
-  }`
+// ✅ API Route in Next.js (app/api/firstroute/route.js)
+
+import { NextResponse } from "next/server";
+
+// Handle GET requests
+export const GET = () => {
+  return NextResponse.json([
+    {
+      name: 'Zohaib',
+      age: 24,
+      location: "Bahawalpur"
+    },
+    {
+      name: 'Ali',
+      age: 24,
+      location: "Bahawalpur"
+    }
+  ]);
+};
+`;
+
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold text-blue-600">📡 Learn Route API (Server Side - Backend)</h1>
@@ -45,11 +46,13 @@ const Learn1FirstRoute = () => {
       >
         🔗 Visit API Route
       </Link>
+
       <br /> <br />
 
-      <pre className='bg-gray-800 text-white w-full rounded-lg p-2 overflow-x-auto'>
-        Code: 📋 app/api/firstroute/router.js
-        <code>{FAPIROUTER}</code></pre>
+      <h2 className="text-lg font-semibold text-gray-600">📜 Example API Route Code:</h2>
+      <pre className="bg-gray-800 text-white w-full rounded-lg p-2 overflow-x-auto">
+        <code>{FAPIROUTER}</code>
+      </pre>
     </div>
   );
 };
