@@ -101,6 +101,10 @@ export default function Home() {
         Static Side Generation SSG
         </button>
 
+        <button onClick={() => navLink('/redirection')} className="bg-blue-400 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Learn About Redirection
+        </button>
+
 
       </div>
     </div>
