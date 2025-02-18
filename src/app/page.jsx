@@ -81,7 +81,7 @@ export default function Home() {
           Dynamic Metadata
         </button>
 
-        <button onClick={() => navLink('/script-components')} className="bg-emerald-500 hover:bg-emerald-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+        <button onClick={() => navLink('/script-components')} className="bg-emerald-700 hover:bg-emerald-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           Script Components
         </button>
 
@@ -107,6 +107,10 @@ export default function Home() {
 
         <button onClick={() => navLink('/environment-variables')} className="bg-lime-700 hover:bg-lime-500 text-white py-3 px-6 rounded-lg shadow-md transition">
         Environment Variables
+        </button>
+
+        <button onClick={() => navLink('/learn-1firstroute')} className="bg-yellow-500 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Route API (Backend 1)
         </button>
         
 
