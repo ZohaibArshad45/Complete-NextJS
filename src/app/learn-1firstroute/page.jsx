@@ -4,6 +4,9 @@ import Link from 'next/link';
 const Learn1FirstRoute = () => {
   const FAPIROUTER = `
 // ✅ API Route in Next.js (app/api/firstroute/route.js)
+// export const GET = ()=>{
+//     return new Response("he")
+// }
 
 import { NextResponse } from "next/server";
 
