@@ -54,8 +54,8 @@ const Redirection = () => {
 
     return (
         <div>
-            <h1>Learn About Redirection</h1>
-            <h1>Two ways to Redirection</h1>
+             <h1 className="text-2xl font-bold text-blue-600">🚀 Learn About Redirection</h1>
+            <h1 className="text-lg font-semibold mt-2">Two ways to Redirect in Next.js</h1>
             <br />
             {/* First Way  */}
             <h2 className="text-xl font-bold text-red-600">📌 First Way</h2>

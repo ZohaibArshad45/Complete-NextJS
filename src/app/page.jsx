@@ -105,6 +105,11 @@ export default function Home() {
         Learn About Redirection
         </button>
 
+        <button onClick={() => navLink('/environment-variables')} className="bg-lime-700 hover:bg-lime-500 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Environment Variables
+        </button>
+        
+
 
       </div>
     </div>
