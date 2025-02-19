@@ -39,7 +39,7 @@ const LearnGETAPI = () => {
             </pre>
             <br /> <br />
 
-            <div className='mb-5 flex gap-2'>
+            <div className='mb-5 flex flex-wrap gap-2'>
                 <Link href={'api/get-route'} className='p-2 bg-red-600 rounded-lg text-white'>GET-All Employee</Link> <br />
                 <Link href={'api/get-route/1'} className='p-2 bg-yellow-500 rounded-lg text-white'>Employee 1</Link>
                 <Link href={'api/get-route/2'} className='p-2 bg-orange-500 rounded-lg text-white'>Employee 2</Link>
