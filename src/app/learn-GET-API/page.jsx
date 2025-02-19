@@ -28,7 +28,7 @@ const LearnGETAPI = () => {
     };`
     return (
         <div>
-            <h1>Learn GET API</h1> 
+            <h1>Learn GET API</h1>
             <p>GET Route is use to GET data from db</p>
             <br />
 
@@ -40,10 +40,11 @@ const LearnGETAPI = () => {
             <br /> <br />
 
             <div className='mb-5 flex gap-2'>
-                <Link href={'api/get-route/1'} className='p-2 bg-red-800 rounded-lg text-white'>Employee 1</Link>
-                <Link href={'api/get-route/2'} className='p-2 bg-red-800 rounded-lg text-white'>Employee 2</Link>
-                <Link href={'api/get-route/3'} className='p-2 bg-red-800 rounded-lg text-white'>Employee 3</Link>
-                <Link href={'api/get-route/545'} className='p-2 bg-red-800 rounded-lg text-white'>Not found Employee</Link>
+                <Link href={'api/get-route'} className='p-2 bg-red-600 rounded-lg text-white'>GET-All Employee</Link> <br />
+                <Link href={'api/get-route/1'} className='p-2 bg-yellow-500 rounded-lg text-white'>Employee 1</Link>
+                <Link href={'api/get-route/2'} className='p-2 bg-orange-500 rounded-lg text-white'>Employee 2</Link>
+                <Link href={'api/get-route/3'} className='p-2 bg-pink-800 rounded-lg text-white'>Employee 3</Link>
+                <Link href={'api/get-route/545'} className='p-2 bg-gray-500 rounded-lg text-white'>🚫Not found Employee</Link>
             </div>
             <pre className="bg-gray-800 text-white w-full rounded-lg p-2 overflow-x-auto">
                 <code>{dynamicRouter}</code>
