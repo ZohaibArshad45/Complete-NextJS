@@ -9,7 +9,7 @@
 // postman == body = raw
 import { NextResponse } from "next/server"
 
-export const POST = async (req, res) => {
+export const POST = async (req) => {
     let data = await req.json()
     // console.log(data)
     // console.log(data.id)
