@@ -133,6 +133,22 @@ export default function Home() {
         <button onClick={() => navLink('/learn-Delete-API')} className="bg-gray-800 hover:bg-gray-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           DELETE API (Backend 5)
         </button>
+
+        <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Integration DELETE API (Backend 6)
+        </button>
+
+        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Learn PUT API (Backend 7)
+        </button> */}
+
+        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Integration PUT API (Backend 8)
+        </button> */}
+
+        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Catch All API (Backend 9)
+        </button> */}
         
 
 
