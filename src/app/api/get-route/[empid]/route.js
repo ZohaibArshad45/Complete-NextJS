@@ -16,3 +16,19 @@ export const GET = (req, { params }) => {
 
     return NextResponse.json(result);
 };
+
+
+
+// ================== Delete =============
+export const DELETE = (req, { params })=>{
+    const empId = parseInt(params.empid); // Convert to number
+
+    if (!empId) {
+        return NextResponse.json({ result: "❌ Employee ID is missing!" }, { status: 400 });
+    }
+
+    return NextResponse.json({ result: `✅ Employee with ID ${empId} has been deleted.` }, { status: 200 });
+};
+
+    
+

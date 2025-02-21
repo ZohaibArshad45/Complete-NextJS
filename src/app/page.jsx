@@ -125,6 +125,10 @@ export default function Home() {
         <button onClick={() => navLink('/how-inte-POST-API')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Integration POST API with FE (Backend 4)
         </button>
+
+        <button onClick={() => navLink('/learn-Delete-API')} className="bg-gray-800 hover:bg-gray-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          DELETE API (Backend 5)
+        </button>
         
 
 
