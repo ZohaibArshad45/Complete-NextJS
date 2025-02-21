@@ -36,6 +36,10 @@ export default function Home() {
           <Link href="/learnLinkNavigation">Learn Navigation</Link>
         </div>
 
+        <div className="bg-cyan-700 hover:bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md transition">
+          <Link href="/wating">Parmas, usePathname, search ETC</Link>
+        </div>
+
         <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/nested-routing">Nested Routing</Link>
         </div>
