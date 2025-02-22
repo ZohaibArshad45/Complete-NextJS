@@ -7,6 +7,10 @@ export default function Home() {
 
   const router = useRouter();
 
+  // const dynamicRoute = ()=>{
+  //   router.push('/dynamic-routes')
+  // }
+
   const navLink = (nav)=>{
     router.push(nav)
   }
@@ -37,12 +41,16 @@ export default function Home() {
         </div>
 
         <div className="bg-cyan-700 hover:bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          <Link href="/wating">Parmas, usePathname, search ETC</Link>
+          <Link href="/urlData">Parmas, usePathname, searchParams, usesearchParams</Link>
         </div>
 
         <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/nested-routing">Nested Routing</Link>
         </div>
+
+        {/* <div onClick={dynamicRoute} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+        Dynamic Routes
+        </div> */}
 
         <div onClick={() => router.push('/dynamic-routes')} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Dynamic Routes
