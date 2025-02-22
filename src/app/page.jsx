@@ -77,6 +77,10 @@ export default function Home() {
           Server-Side API Fetch
         </button>
 
+        <button onClick={() => navLink('/project-1')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Project 1
+        </button>
+
         <button onClick={() => navLink('/learn-image-Optimization')} className="bg-cyan-500 hover:bg-cyan-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Image Optimization
         </button>
@@ -158,9 +162,6 @@ export default function Home() {
           Catch All API (Backend 9)
         </button> */}
 
-        <button onClick={() => navLink('/project-1')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Project 1
-        </button>
 
 
 
