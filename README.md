@@ -6,8 +6,15 @@ First, run the development server:
 
 ```bash
 npm run dev
-
+```
+DataBase:
+```bash
 npm i mongoose
+
+npm install joi
+
+//Joi is a powerful data validation library for JavaScript,
+commonly used in Node.js and Next.js applications to validate user input before processing it.
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
