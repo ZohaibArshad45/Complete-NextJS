@@ -11,7 +11,7 @@ export default function Home() {
   //   router.push('/dynamic-routes')
   // }
 
-  const navLink = (nav)=>{
+  const navLink = (nav) => {
     router.push(nav)
   }
 
@@ -64,7 +64,7 @@ export default function Home() {
           404 Error
         </button>
 
-        
+
         <button onClick={() => router.push('/middleware')} className="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           Middleware
         </button>
@@ -77,7 +77,7 @@ export default function Home() {
           Server-Side API Fetch
         </button>
 
-        <button onClick={() => navLink('/project-1')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        <button onClick={() => navLink('/project-1')} className="bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Project 1
         </button>
 
@@ -106,23 +106,23 @@ export default function Home() {
         </button>
 
         <button onClick={() => navLink('/Static-Assets')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Static-Assets
+          Static-Assets
         </button>
 
         <button onClick={() => navLink('/static-html-page')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Static Html Page
+          Static Html Page
         </button>
 
         <button onClick={() => navLink('/static-side-generation')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Static Side Generation SSG
+          Static Side Generation SSG
         </button>
 
         <button onClick={() => navLink('/redirection')} className="bg-blue-400 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Learn About Redirection
+          Learn About Redirection
         </button>
 
         <button onClick={() => navLink('/environment-variables')} className="bg-lime-700 hover:bg-lime-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Environment Variables
+          Environment Variables
         </button>
 
         <button onClick={() => navLink('/learn-1firstroute')} className="bg-yellow-500 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg shadow-md transition">
@@ -136,13 +136,13 @@ export default function Home() {
         <button onClick={() => navLink('/learn-POST-API')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           POST API (Backend 3)
         </button>
-        
+
 
         <button onClick={() => navLink('/how-inte-POST-API')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Integration POST API with FE (Backend 4)
         </button>
 
-        <button onClick={() => navLink('/learn-Delete-API')} className="bg-gray-800 hover:bg-gray-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        <button onClick={() => navLink('/learn-Delete-API')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           DELETE API (Backend 5)
         </button>
 
@@ -161,6 +161,11 @@ export default function Home() {
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           Catch All API (Backend 9)
         </button> */}
+
+
+        <button onClick={() => navLink('/project-2')} className="bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Project 2
+        </button>
 
 
 
