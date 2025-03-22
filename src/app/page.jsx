@@ -130,7 +130,7 @@ export default function Home() {
         </button>
 
         <button onClick={() => navLink('/learn-GET-API')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          GET API (Backend 2)
+          GET API Static (Backend 2)
         </button>
 
         <button onClick={() => navLink('/learn-POST-API')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
