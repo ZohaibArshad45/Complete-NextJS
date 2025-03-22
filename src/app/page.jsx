@@ -142,9 +142,9 @@ export default function Home() {
           Integration Static POST API with FE (Backend 4)
         </button> */}
 
-        <button onClick={() => navLink('/learn-Delete-API')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        {/* <button onClick={() => navLink('/learn-Delete-API')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           DELETE API Static (Backend 5)
-        </button>
+        </button> */}
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           Integration Static DELETE API (Backend 6)
