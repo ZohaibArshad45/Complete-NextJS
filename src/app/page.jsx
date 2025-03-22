@@ -163,9 +163,7 @@ export default function Home() {
         </button> */}
 
 
-        <button onClick={() => navLink('/project-2')} className="bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Project 2
-        </button>
+
 
 
 
