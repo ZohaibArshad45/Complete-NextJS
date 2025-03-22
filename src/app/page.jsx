@@ -162,6 +162,10 @@ export default function Home() {
           Catch All API (Backend 9)
         </button> */}
 
+        <button onClick={() => navLink('/mongoDB-connection')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        MongoDB Connection
+        </button>
+
 
 
 
