@@ -9,5 +9,4 @@ export const GET = async ()=>{
     const UserData = await UserModel.find()
 
     return NextResponse.json({Result : UserData})
-
 }
