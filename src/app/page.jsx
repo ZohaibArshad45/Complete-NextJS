@@ -134,28 +134,28 @@ export default function Home() {
         </button>
 
         <button onClick={() => navLink('/learn-POST-API')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          POST API (Backend 3)
+          POST API Static (Backend 3)
         </button>
 
 
-        <button onClick={() => navLink('/how-inte-POST-API')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration POST API with FE (Backend 4)
-        </button>
+        {/* <button onClick={() => navLink('/waiting')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Integration Static POST API with FE (Backend 4)
+        </button> */}
 
         <button onClick={() => navLink('/learn-Delete-API')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          DELETE API (Backend 5)
-        </button>
-
-        <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration DELETE API (Backend 6)
+          DELETE API Static (Backend 5)
         </button>
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Learn PUT API (Backend 7)
+          Integration Static DELETE API (Backend 6)
         </button> */}
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration PUT API (Backend 8)
+          Learn PUT API Static (Backend 7)
+        </button> */}
+
+        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+          Integration Static PUT API (Backend 8)
         </button> */}
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">

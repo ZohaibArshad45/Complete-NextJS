@@ -18,7 +18,7 @@ export const DELETE = async (req, { params }) => {
         <div>
             <h1 className="text-2xl font-bold text-red-600">🗑️ Learn DELETE API in Next.js</h1>
             <p className="text-gray-700 mt-4">🚀 DELETE API is used in **dynamic routes**.</p>
-            <p> For check Paste it in POSTMAN <br />http://localhost:3000/api/get-route/3</p>
+            <p> For check Paste it in POSTMAN <br />http://localhost:3000/api/getApi/3</p>
             <br />
 
             <h2 className="text-lg font-semibold text-gray-600">📜 Example DELETE API Route Code:</h2>

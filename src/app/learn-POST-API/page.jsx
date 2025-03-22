@@ -35,7 +35,7 @@ export const POST = async (req) => {
 
       {/* API Route Link */}
       <Link
-        href="/api/post-route"
+        href="/api/postApi"
         className="inline-block px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition mt-4"
       >
         🔗 Visit POST API Route
