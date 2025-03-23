@@ -64,7 +64,6 @@ export default function Home() {
           404 Error
         </button>
 
-
         <button onClick={() => router.push('/middleware')} className="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           Middleware
         </button>
@@ -162,15 +161,13 @@ export default function Home() {
           Catch All API (Backend 9)
         </button> */}
 
-        <button onClick={() => navLink('/mongoDB-connection')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        <button onClick={() => navLink('/mongoDB-connection')} className="bg-violet-800 hover:bg-violet-600 text-white py-3 px-6 rounded-lg shadow-md transition">
         MongoDB Connection
         </button>
 
-
-
-
-
-
+        <button onClick={() => navLink('/mongodb-POST')} className="bg-blue-800 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        MongoDB POST Method
+        </button>
 
       </div>
     </div>
