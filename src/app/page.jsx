@@ -23,7 +23,7 @@ export default function Home() {
         🚀 Home Page
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-3xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
         <div className="bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/react-vs-next">React vs Next JS</Link>
         </div>
