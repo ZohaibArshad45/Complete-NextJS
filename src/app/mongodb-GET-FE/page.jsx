@@ -3,6 +3,7 @@ import React from 'react';
 const getData = async () => {
     // const data = await fetch('http://localhost:3000/api/mongodb-connection');
     const data = await fetch('https://complete-nextjs-ten.vercel.app/api/mongodb-connection');
+    
     const Fdata = await data.json();
 
     if (Fdata.success) {
