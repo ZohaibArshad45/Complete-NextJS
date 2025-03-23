@@ -170,7 +170,11 @@ export default function Home() {
         </button>
 
         <button onClick={() => navLink('/mongodb-post-FE')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        MongoDB POST Method
+        MongoDB POST Method Frontend integration
+        </button>
+
+        <button onClick={() => navLink('/mongodb-GET-FE')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        MongoDB GET Method Frontend integration
         </button>
 
       </div>

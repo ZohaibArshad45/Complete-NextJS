@@ -8,5 +8,5 @@ export const GET = async ()=>{
     await mongoose.connect(DBString)
     const UserData = await UserModel.find()
 
-    return NextResponse.json({Result : UserData})
+    return NextResponse.json({Result : UserData, success:true})
 }
