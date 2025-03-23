@@ -18,5 +18,5 @@ export const POST = async (req) => {
 
     const fdata = await newUserData.save()
 
-    return NextResponse.json({result : fdata})
+    return NextResponse.json({result : fdata , success:true})
 }

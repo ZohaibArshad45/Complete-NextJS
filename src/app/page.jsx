@@ -169,6 +169,10 @@ export default function Home() {
         MongoDB POST Method
         </button>
 
+        <button onClick={() => navLink('/mongodb-post-FE')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
+        MongoDB POST Method
+        </button>
+
       </div>
     </div>
   );
