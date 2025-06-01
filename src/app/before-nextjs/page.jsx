@@ -6,21 +6,22 @@ const topics = [
         items: ['var', 'let', 'const', 'Hoisting of Variables'],
     },
     {
-        title: '2. Functions in JavaScript',
+        title: '2. Conditions in JavaScript',
+        items: ['if else', 'Ternary Operator', 'Logical Operators (&&, ||)', 'Optional Chaining'],
+    },
+    {
+        title: '3. Functions in JavaScript',
         items: ['Arrow Functions', 'Higher Order Functions'],
     },
     {
-        title: '3. Arrays and Objects',
+        title: '4. Arrays and Objects',
         items: [
             'Array', 'Array Destructuring',
             'Object', 'Object Destructuring',
             'Rest Operator', 'Spread Operator',
         ],
     },
-    {
-        title: '4. Conditions in JavaScript',
-        items: ['if else', 'Ternary Operator', 'Logical Operators (&&, ||)', 'Optional Chaining'],
-    },
+
     {
         title: '5. Array Methods',
         items: ['map()', 'filter()', 'reduce()', 'sort()'],
@@ -45,8 +46,8 @@ const topics = [
 
 const BeforeNextJS = () => {
     return (
-        <div className="max-w-7xl mx-auto p-6 bg-white shadow-md rounded-lg">
-            <h1 className="text-3xl font-bold text-blue-600 mb-6">
+        <div className="max-w-7xl mx-auto p-6 shadow-md rounded-lg">
+            <h1 className="text-3xl font-bold text-blue-700 mb-6">
                 📘 Before Learning React.js / Next.js
             </h1>
 
@@ -55,10 +56,10 @@ const BeforeNextJS = () => {
                 {topics.map((topic, index) => (
                     <div
                         key={index}
-                        className="bg-gray-100 border border-gray-200 p-4 rounded-md hover:bg-gray-200 transition-all"
+                        className="bg-white rounded-xl shadow-md p-5 border hover:shadow-lg transition"
                     >
-                        <h2 className="text-lg font-semibold text-purple-700 mb-2">{topic.title}</h2>
-                        <ul className="list-disc list-inside text-sm text-gray-800 space-y-1">
+                        <h2 className="text-lg font-semibold mb-2">{topic.title}</h2>
+                        <ul className="list-disc list-inside text-sm space-y-1">
                             {topic.items.map((item, idx) => (
                                 <li key={idx}>{item}</li>
                             ))}
