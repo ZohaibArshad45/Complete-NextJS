@@ -6,3 +6,13 @@ body {
   background-color: #FFFFFF; /* Soft light gray, less bright than white */
   color: #000000; /* Muted dark blue-gray, very readable */
 }
+
+body::-webkit-scrollbar{
+  width: 5px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(14, 3, 131);
+  border-radius: 6px; /* optional: smooth edges */
+}

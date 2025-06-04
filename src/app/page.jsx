@@ -6,9 +6,13 @@ const PageLinks = [
   { name: "Before React & Nextjs", links: "learn-before-nextjs" },
   { name: "JavaScript Basics & Conditions", links: "javaScript-basics-&-conditions" },
   { name: "JavaScript Functions", links: "javaScript-functions" },
-  { name: "React vs Next JS", links: "react-vs-next" },
-  { name: "How we Start", links: "how-we-start" },
-  { name: "Learn Event & State", links: "learnEventFunctionStates" },
+  { name: "Javascript Arrays & Objects", links: "javascript-arrays-&-objects" },
+  { name: "Javascript Arrays Methods", links: "javascript-array-methods" },
+
+
+//   { name: "React vs Next JS", links: "react-vs-next" },
+//   { name: "How we Start", links: "how-we-start" },
+//   { name: "Learn Event & State", links: "learnEventFunctionStates" },
 ]
 
 

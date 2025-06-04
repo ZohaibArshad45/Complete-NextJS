@@ -24,13 +24,13 @@ const topics = [
             'Object', 'Object Destructuring',
             'Rest Operator', 'Spread Operator',
         ],
-        link : ""
+        link : "javascript-arrays-&-objects"
     },
 
     {
         title: '5. Array Methods',
         items: ['map()', 'filter()', 'reduce()', 'sort()'],
-        link : ""
+        link : "javascript-array-methods"
     },
     {
         title: '6. Event Listeners',

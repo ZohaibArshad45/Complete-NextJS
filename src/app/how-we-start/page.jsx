@@ -2,7 +2,7 @@ import React from "react";
 
 const HowWeStart = () => {
     return (
-        <div className=" flex flex-col items-center bg-gray-50 p-6">
+        <div className=" flex flex-col items-center p-6">
             <h1 className="text-4xl font-extrabold text-blue-800 mb-6">🚀 How We Start</h1>
             <p className="text-lg text-gray-700 text-center max-w-2xl leading-relaxed">
                 To start a Next.js project, run the following command:
