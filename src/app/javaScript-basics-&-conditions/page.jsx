@@ -5,23 +5,23 @@ const sections = [
   {
     title: "1. var, let, const",
     description:
-      "These are different ways to declare variables in JavaScript. Each has its own rules:",
+      "Yeh teen different tareeqay hain JavaScript mein variable bananay ke. Har ek ka apna scope aur rules hota hai.",
     points: [
       {
         name: "var",
         detail:
-          "`var` is function-scoped. Can be re-declared and reassigned (not recommended).",
+          "var function scoped hota hai. Isay dobara declare aur reassign kiya ja sakta hai (lekin avoid karna chahiye).",
         code: `var x = 10;\nx = 20;\nvar x = 30; // ✅ Re-declaration allowed`,
       },
       {
         name: "let",
         detail:
-          "`let` is block-scoped. Can be reassigned but not re-declared in the same scope.",
+          "let block scoped hota hai. Isay dobara assign kiya ja sakta hai, lekin dobara declare nahi kar saktay same block mein.",
         code: `let y = 5;\ny = 15; // ✅\nlet y = 25; // ❌ Error`,
       },
       {
         name: "const",
-        detail: "`const` is block-scoped. Cannot be reassigned or re-declared.",
+        detail: "const bhi block scoped hota hai. Isay na to reassign kar saktay hain, na dobara declare.",
         code: `const z = 100;\nz = 200; // ❌ Error`,
       },
     ],
@@ -29,39 +29,39 @@ const sections = [
   {
     title: "2. Hoisting",
     description:
-      "`var` declarations are hoisted (moved to top), but `let` and `const` are hoisted in a 'temporal dead zone'.",
+      "var declarations top par chali jati hain (hoist hoti hain), jabke let aur const Temporal Dead Zone mein hoti hain.",
     points: [
       {
         name: "var Hoisting",
-        detail: "`var` is undefined when accessed before declaration:",
+        detail: "var declare honay se pehle undefined show hota hai:",
         code: `console.log(a); // undefined\nvar a = 10;`,
       },
       {
         name: "let/const Hoisting",
         detail:
-          "`let` and `const` throw error if used before declared:",
+          "let ya const use karne se pehle error throw hota hai:",
         code: `console.log(b); // ❌ ReferenceError\nlet b = 20;`,
       },
     ],
   },
   {
     title: "3. if / else Conditions",
-    description: "Basic conditional structure to control logic flow.",
+    description: "Agar koi condition true hai to kuch karo, warna else block chalay ga.",
     points: [
       {
         name: "Example",
-        detail: "Check if number is positive or not:",
+        detail: "Check karo number positive hai ya nahi:",
         code: `const num = -3;\nif(num > 0){\n  console.log("Positive");\n} else {\n  console.log("Not positive");\n}`,
       },
     ],
   },
   {
     title: "4. Ternary Operator",
-    description: "A shorter way to write if/else in one line.",
+    description: "Short form hai if/else condition ka — aik line mein likh saktay hain.",
     points: [
       {
         name: "Example",
-        detail: "Assign based on age condition:",
+        detail: "Age check kar ke message assign karo:",
         code: `const age = 18;\nconst msg = age >= 18 ? "Adult" : "Minor";`,
       },
     ],
@@ -69,11 +69,11 @@ const sections = [
   {
     title: "5. Logical Operators",
     description:
-      "`&&` returns true if both are true. `||` returns true if at least one is true.",
+      "&& dono conditions true hoon to true return karta hai. || mein agar ek bhi true ho to true return hota hai.",
     points: [
       {
         name: "Example",
-        detail: "Combine conditions with && and ||",
+        detail: "Multiple conditions combine karke check karna:",
         code: `if(isLoggedIn && isAdmin){\n  console.log("Welcome Admin");\n}\n\nif(age > 18 || hasPermission){\n  console.log("Access Granted");\n}`,
       },
     ],
@@ -81,11 +81,11 @@ const sections = [
   {
     title: "6. Optional Chaining",
     description:
-      "Use `?.` to safely access nested properties without breaking the app if `undefined`.",
+      "Kisi object ke nested property ko safely access karne ke liye ?. use karte hain — agar undefined ho to crash nahi hota.",
     points: [
       {
         name: "Example",
-        detail: "Prevent errors from undefined objects:",
+        detail: "Agar user ka kuch data missing ho to bhi app crash nahi karegi:",
         code: `const user = { profile: { name: "Ali" } };\nconsole.log(user.profile?.name); // Ali\nconsole.log(user.settings?.theme); // undefined (✅ No crash)`,
       },
     ],
@@ -130,4 +130,4 @@ const JavaScriptIntro = () => {
   );
 };
 
-export default JavaScriptIntro;
+export default JavaScriptIntro

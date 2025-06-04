@@ -1,17 +1,21 @@
+import Link from 'next/link';
 import React from 'react';
 
 const topics = [
     {
         title: '1. Basics of JavaScript',
         items: ['var', 'let', 'const', 'Hoisting of Variables'],
+        link : "javaScript-basics-&-conditions"
     },
     {
         title: '2. Conditions in JavaScript',
         items: ['if else', 'Ternary Operator', 'Logical Operators (&&, ||)', 'Optional Chaining'],
+        link : "javaScript-basics-&-conditions"
     },
     {
         title: '3. Functions in JavaScript',
         items: ['Arrow Functions', 'Higher Order Functions'],
+        link : "javaScript-functions"
     },
     {
         title: '4. Arrays and Objects',
@@ -20,27 +24,33 @@ const topics = [
             'Object', 'Object Destructuring',
             'Rest Operator', 'Spread Operator',
         ],
+        link : ""
     },
 
     {
         title: '5. Array Methods',
         items: ['map()', 'filter()', 'reduce()', 'sort()'],
+        link : ""
     },
     {
         title: '6. Event Listeners',
         items: ['onClick', 'onBlur', 'onChange', 'onFocus', 'setTimeout()', 'setInterval()'],
+        link : ""
     },
     {
         title: '7. Asynchronous JavaScript',
         items: ['Callbacks', 'Callback Hell', 'Promises', 'Promise APIs', 'Promise Chain'],
+        link : ""
     },
     {
         title: '8. Async / Await',
         items: ['Async Functions', 'Await Syntax'],
+        link : ""
     },
     {
         title: '9. Try / Catch',
         items: ['Error Handling with Try/Catch'],
+        link : ""
     },
 ];
 
@@ -54,10 +64,11 @@ const BeforeNextJS = () => {
             {/* Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {topics.map((topic, index) => (
-                    <div
-                        key={index}
-                        className="bg-white rounded-xl shadow-md p-5 border hover:shadow-lg transition"
+                    <Link key={index} href={topic.link} className="bg-white rounded-xl shadow-md p-5 border hover:shadow-lg transition"
                     >
+                    <div
+                        
+                        >
                         <h2 className="text-lg font-semibold mb-2">{topic.title}</h2>
                         <ul className="list-disc list-inside text-sm space-y-1">
                             {topic.items.map((item, idx) => (
@@ -65,6 +76,7 @@ const BeforeNextJS = () => {
                             ))}
                         </ul>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>
