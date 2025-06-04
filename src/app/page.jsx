@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const PageLinks = [
-  { name: "Before React & Nextjs", links: "before-nextjs" },
+  { name: "Before React & Nextjs", links: "learn-before-nextjs" },
+  { name: "JavaScript Basics & Conditions", links: "Basics-&-Conditions-in-JS" },
   { name: "React vs Next JS", links: "react-vs-next" },
   { name: "How we Start", links: "how-we-start" },
   { name: "Learn Event & State", links: "learnEventFunctionStates" },
