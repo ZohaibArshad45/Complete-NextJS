@@ -8,6 +8,7 @@ const PageLinks = [
   { name: "JavaScript Functions", links: "javaScript-functions" },
   { name: "Javascript Arrays & Objects", links: "javascript-arrays-&-objects" },
   { name: "Javascript Arrays Methods", links: "javascript-array-methods" },
+  { name: "Javascript Event Listeners", links: "javascript-event-listeners" },
 
 
 //   { name: "React vs Next JS", links: "react-vs-next" },

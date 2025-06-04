@@ -35,7 +35,7 @@ const topics = [
     {
         title: '6. Event Listeners',
         items: ['onClick', 'onBlur', 'onChange', 'onFocus', 'setTimeout()', 'setInterval()'],
-        link : ""
+        link : "javascript-event-listeners"
     },
     {
         title: '7. Asynchronous JavaScript',
