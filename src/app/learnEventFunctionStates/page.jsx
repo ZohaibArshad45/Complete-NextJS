@@ -1,127 +1,110 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 
 const LearnEventFunctionState = () => {
-  // Code snippets
-  let eventCode = `
-  <button onClick={() => alert("Hello!")}>
-      Event
-  </button>`;
-
-  let functionCode = `
-  // Function without parameter
-  const handleClick = () => {
-    alert("Learn About Function");
-  }
-
-  <button onClick={handleClick}>
-    Function without parameter
-  </button>`;
-
-  let functionWithParameterCode = `
-  // Function with parameter
-  const handleClickWithParam = (name) => {
-    alert("Learn About Function with parameter: " + name);
-  }
-
-  <button onClick={() => handleClickWithParam('Zohaib')}>
-    Function with parameter
-  </button>`;
-
-  let stateCode = `
-  // State
   const [number, setNumber] = useState(0);
 
-  <div>
-      <p>{number}</p>
-      <button onClick={() => setNumber((prev) => prev + 1)}>
-        ➕ Increase
-      </button>
-
-      <button onClick={() => setNumber((prev) => Math.max(0, prev - 1))}>
-        ➖ Decrease
-      </button>
-  </div>`;
-
-  // Function without parameter
-  const handleClick = () => {
-    alert("Learn About Function");
-  };
-
-  // Function with parameter
-  const handleClickWithParam = (name) => {
-    alert(`Learn About Function with parameter: ${name}`);
-  };
-
-  // State
-  const [number, setNumber] = useState(0);
+  // Functions
+  const handleClick = () => alert("Learn About Function");
+  const handleClickWithParam = (name) =>
+    alert(`Function with parameter: ${name}`);
 
   return (
-    <div className='flex flex-col items-center py-10 gap-6 bg-gray-100 min-h-screen px-4'>
-      <h1 className='text-3xl font-bold text-blue-700 text-center'>
-        🚀 Learn Event Functions & State
-      </h1>
-      <p className="text-gray-600 text-center max-w-lg">
-        📌 Understand event functions and React state management with simple examples.
-      </p>
+    <div className="min-h-screen px-4 py-10 bg-gray-100 text-gray-800">
+      <div className="max-w-3xl mx-auto space-y-10">
+        <h1 className="text-4xl font-extrabold text-center text-blue-700">
+          🚀 Learn Events, Functions & State
+        </h1>
+        <p className="text-center text-gray-600 max-w-xl mx-auto">
+          React ke basic concepts jaise events, function handling aur state
+          ko samjho with Roman Urdu explanations.
+        </p>
 
-      {/* ============= Event ============ */}
-      <button
-        onClick={() => alert("Hello!")}
-        className="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition">
-        🔥 Event
-      </button>
-
-      <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋 <code>{eventCode}</code>
-      </pre>
-
-      {/* ========== Function without parameter =========== */}
-      <button
-        onClick={handleClick}
-        className="bg-green-600 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition">
-        📌 Function without parameter
-      </button>
-
-      <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋 <code>{functionCode}</code>
-      </pre>
-
-      {/* ===============  Function with parameter ============= */}
-      <button
-        onClick={() => handleClickWithParam('Zohaib')}
-        className="bg-purple-600 hover:bg-purple-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition">
-        🧑‍💻 Function with parameter
-      </button>
-
-      <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋 <code>{functionWithParameterCode}</code>
-      </pre>
-
-      {/* ================== State Display =============== */}
-      <div className="flex flex-col items-center">
-        <p className="text-2xl font-semibold text-gray-800">Counter: {number}</p>
-
-        {/* State Buttons */}
-        <div className='flex items-center justify-center gap-4 mt-3'>
+        {/* Event Example */}
+        <section className="space-y-3">
+          <h2 className="text-xl font-bold">🔥 1. Simple Event</h2>
           <button
-            onClick={() => setNumber((prev) => prev + 1)}
-            className="bg-teal-600 hover:bg-teal-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition">
-            ➕ Increase
+            onClick={() => alert("Hello!")}
+            className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded shadow transition"
+          >
+            Trigger Event
           </button>
+          <pre className="bg-gray-900 text-green-200 text-sm p-4 rounded overflow-x-auto">
+{`<button onClick={() => alert("Hello!")}>
+  Event
+</button>`}
+          </pre>
+        </section>
 
+        {/* Function without parameter */}
+        <section className="space-y-3">
+          <h2 className="text-xl font-bold">📌 2. Function without Parameter</h2>
           <button
-            onClick={() => setNumber((prev) => Math.max(0, prev - 1))}
-            className="bg-red-600 hover:bg-red-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition">
-            ➖ Decrease
+            onClick={handleClick}
+            className="bg-green-600 hover:bg-green-800 text-white py-2 px-4 rounded shadow transition"
+          >
+            Call Function
           </button>
-        </div>
+          <pre className="bg-gray-900 text-green-200 text-sm p-4 rounded overflow-x-auto">
+{`const handleClick = () => {
+  alert("Learn About Function");
+}
+
+<button onClick={handleClick}>
+  Function without parameter
+</button>`}
+          </pre>
+        </section>
+
+        {/* Function with parameter */}
+        <section className="space-y-3">
+          <h2 className="text-xl font-bold">🧠 3. Function with Parameter</h2>
+          <button
+            onClick={() => handleClickWithParam("Zohaib")}
+            className="bg-purple-600 hover:bg-purple-800 text-white py-2 px-4 rounded shadow transition"
+          >
+            Pass Parameter
+          </button>
+          <pre className="bg-gray-900 text-green-200 text-sm p-4 rounded overflow-x-auto">
+{`const handleClickWithParam = (name) => {
+  alert("Learn About Function with parameter: " + name);
+}
+
+<button onClick={() => handleClickWithParam('Zohaib')}>
+  Function with parameter
+</button>`}
+          </pre>
+        </section>
+
+        {/* State Example */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-bold">📈 4. State Management</h2>
+          <p className="text-lg font-semibold">Counter: {number}</p>
+          <div className="flex gap-4">
+            <button
+              onClick={() => setNumber((prev) => prev + 1)}
+              className="bg-teal-600 hover:bg-teal-800 text-white py-2 px-4 rounded shadow transition"
+            >
+              ➕ Increase
+            </button>
+            <button
+              onClick={() => setNumber((prev) => Math.max(0, prev - 1))}
+              className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded shadow transition"
+            >
+              ➖ Decrease
+            </button>
+          </div>
+          <pre className="bg-gray-900 text-green-200 text-sm p-4 rounded overflow-x-auto">
+{`const [number, setNumber] = useState(0);
+
+<div>
+  <p>{number}</p>
+  <button onClick={() => setNumber(prev => prev + 1)}>➕</button>
+  <button onClick={() => setNumber(prev => Math.max(0, prev - 1))}>➖</button>
+</div>`}
+          </pre>
+        </section>
       </div>
-
-      <pre className='bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto'>
-        Code:📋 <code>{stateCode}</code>
-      </pre>
-
     </div>
   );
 };
