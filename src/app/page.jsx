@@ -4,10 +4,10 @@ import { useRouter } from "next/navigation";
 
 const PageLinks = [
   { name: "Learn before React & Nextjs", links: "learn-before-nextjs" },
-  
   { name: "Different b/w React vs Next JS", links: "react-vs-next" },
   { name: "Learn how we start project", links: "how-we-start" },
   { name: "Learn Event - Function & States", links: "learnEventFunctionStates" },
+  { name: "Learn Sever-Side vs Client-Side", links: "learn-sever-&-client" },
 ]
 
 
