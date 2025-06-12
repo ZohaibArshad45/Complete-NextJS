@@ -7,7 +7,7 @@ const PageLinks = [
   
   { name: "Different b/w React vs Next JS", links: "react-vs-next" },
   { name: "Learn how we start project", links: "how-we-start" },
-  { name: "Learn Event & State", links: "learnEventFunctionStates" },
+  { name: "Learn Event - Function & States", links: "learnEventFunctionStates" },
 ]
 
 
