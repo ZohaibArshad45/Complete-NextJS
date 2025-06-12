@@ -8,6 +8,7 @@ const PageLinks = [
   { name: "Learn how we start project", links: "how-we-start" },
   { name: "Learn Event - Function & States", links: "learnEventFunctionStates" },
   { name: "Learn Sever-Side vs Client-Side", links: "learn-sever-&-client" },
+  { name: "Learn Routing (App Router)", links: "learn-about-routing" },
 ]
 
 
