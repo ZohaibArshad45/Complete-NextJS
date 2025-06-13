@@ -11,6 +11,7 @@ const PageLinks = [
   { name: "Learn Routing (App Router)", links: "learn-about-routing" },
   { name: "learn Link Navigation Router", links: "learn-link-navigation" },
   { name: "Parmas, usePathname, searchParams, usesearchParams", links: "learn-how-get-url-data" },
+  { name: "Nested Routing and layout ", links: "learn-nested-routing-&-layout" },
 ]
 
 
@@ -48,10 +49,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          <Link href="/nested-routing">Nested Routing</Link>
-        </div> */}
 
         {/* <div onClick={dynamicRoute} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
         Dynamic Routes

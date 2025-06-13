@@ -18,7 +18,15 @@ const layout = ({ children }) => {
             {children}
             {
                 pathname == '/nested-routing/arslan' ? null : <>
-                    <Link href='/nested-routing'><span className='bg-red-900 px-2 rounded-lg  border-4 text-white'>Nested Routing</span>This come from layout page</Link>
+                    <div className="m-6 text-center">
+                        <p className="text-gray-600 mt-2">This is rendered from the layout component</p>
+                        <Link href="/nested-routing">
+                            <span className="bg-red-700 hover:bg-red-900 text-white px-4 py-2 rounded-lg inline-block shadow-md transition">
+                                🔙 Back to Nested Routing
+                            </span>
+                        </Link>
+                        
+                    </div>
                 </>
             }
 
