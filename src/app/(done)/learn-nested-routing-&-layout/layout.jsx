@@ -17,7 +17,7 @@ const layout = ({ children }) => {
 
             {children}
             {
-                pathname == '/nested-routing/arslan' ? null : <>
+                pathname == '/learn-nested-routing-&-layout/arslan' ? null : <>
                     <div className="m-6 text-center">
                         <p className="text-gray-600 mt-2">This is rendered from the layout component</p>
                         <Link href="/nested-routing">
