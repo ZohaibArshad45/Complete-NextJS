@@ -11,56 +11,65 @@ const LearnLinkNavigation = () => {
         router.push(path);
     };
 
-    // Code snippets (display only)
+    // Code snippets (for UI display)
     const linkTag = `
 import Link from "next/link";
-<Link href={'/'}>🏠 Home</Link>
+<Link href="/">🏠 Home</Link>
 `;
 
     const routerTag = `
+'use client';
 import { useRouter } from "next/navigation";
 const router = useRouter();
 
-// 1st way:
-<button onClick={() => router.push('/employee')}> Click </button>
+// Method 1
+<button onClick={() => router.push('/employee')}>Click</button>
 
-// 2nd way:
+// Method 2
 const navigateTo = (path) => {
     router.push(path);
 };
 <button onClick={() => navigateTo('/static-html-page')}>Go</button>
 `;
 
-
-const QueryParameters = `
+    const queryParameters = `
 <Link href={{ pathname: '/profile', query: { name: 'Zohaib' } }}>
-👤 Profile
+    👤 Profile
 </Link>
-`
+`;
 
     return (
-        <div className="flex flex-col items-center justify-center py-12 px-4 gap-8 bg-gray-100 min-h-screen">
-            <h1 className="text-3xl font-bold text-blue-700 text-center">🚀 Learn Link Navigation in Next.js</h1>
+        <div className="flex flex-col items-center justify-center py-12 px-4 gap-10 bg-gray-100 min-h-screen">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-700 text-center">
+                🚀 Learn Link & Navigation in Next.js
+            </h1>
 
-            {/* Using Link */}
-            <div className="text-center space-y-2">
-                <p className="text-xl font-semibold text-gray-800">✅ 1. Using Link for Client-Side Navigation</p>
-                <p className="text-gray-600">📌 <code>next/link</code> allows fast navigation between pages.</p>
-                <p className="text-sm text-gray-500">⚡ Faster than &lt;a&gt; because it preloads the route.</p>
-                <div className="mt-2">
-                    <button className="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-md shadow transition">
-                        <Link href="/">🏠 Home</Link>
-                    </button>
-                </div>
-                <pre className="bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto text-left">
-                    Code:📋 <code>{linkTag}</code>
+            {/* 1. Link Navigation */}
+            <section className="text-center space-y-2">
+                <p className="text-xl font-semibold text-gray-800">✅ 1. Link Navigation</p>
+                <p className="text-gray-600">
+                    📌 <code>next/link</code> allows fast client-side navigation between routes.
+                </p>
+                <p className="text-sm text-gray-500">⚡ Faster than &lt;a&gt; because it preloads routes automatically.</p>
+
+                <Link
+                    href="/"
+                    className="inline-block bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-md shadow transition"
+                >
+                    🏠 Home
+                </Link>
+
+                <pre className="bg-gray-800 text-white rounded-xl px-4 py-3 text-left overflow-x-auto whitespace-pre-wrap">
+                    <code>{linkTag}</code>
                 </pre>
-            </div>
+            </section>
 
-            {/* Using useRouter */}
-            <div className="text-center space-y-2">
-                <p className="text-xl font-semibold text-gray-800">✅ 2. Programmatic Navigation with useRouter()</p>
-                <p className="text-gray-600">🔹 <code>router.push()</code> is used to navigate via functions or events.</p>
+            {/* 2. useRouter Navigation */}
+            <section className="text-center space-y-2">
+                <p className="text-xl font-semibold text-gray-800">✅ 2. Programmatic Navigation using <code>useRouter()</code></p>
+                <p className="text-gray-600">🔹 Dynamically navigate using functions or user events.</p>
+                <p className="text-gray-600">🔹 It works only on the client side — so <code>'use client'</code> is required.</p>
+
                 <div className="flex flex-wrap justify-center gap-4 mt-4">
                     <button onClick={() => router.push('/')} className="bg-green-600 hover:bg-green-800 text-white py-2 px-4 rounded-md shadow transition">
                         🏠 Home
@@ -72,28 +81,36 @@ const QueryParameters = `
                         📖 About
                     </button>
                 </div>
-                <p className="text-sm text-gray-500 mt-2">
-                    🔹 <code>router.push("/page")</code> → Navigate to a new page <br />
-                    🔹 <code>router.replace("/page")</code> → Navigate without saving history <br />
+
+                <p className="text-sm text-gray-500 mt-2 leading-relaxed">
+                    🔹 <code>router.push("/page")</code> → Navigate to a new page<br />
+                    🔹 <code>router.replace("/page")</code> → Navigate without saving history<br />
                     🔹 <code>router.back()</code> → Go back to previous page
                 </p>
-                <pre className="bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto text-left">
-                    Code:📋 <code>{routerTag}</code>
-                </pre>
-            </div>
 
-            {/* Navigating with Query Params */}
-            <div className="text-center space-y-2">
-                <p className="text-xl font-semibold text-gray-800">✅ 3. Navigating with Query Parameters</p>
-                <p className="text-gray-600">📌 Example: Go to <code>/profile?name=Zohaib</code></p>
-                <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded-md shadow transition">
-                    <Link href={{ pathname: '/profile', query: { name: 'Zohaib' } }}>👤 Profile</Link>
-                </button>
-                <pre className="bg-gray-800 text-white rounded-xl px-4 py-2 w-full overflow-x-auto text-left">
-                    Code:📋 <code>{QueryParameters}</code>
+                <pre className="bg-gray-800 text-white rounded-xl px-4 py-3 text-left overflow-x-auto whitespace-pre-wrap">
+                    <code>{routerTag}</code>
                 </pre>
+            </section>
 
-            </div>
+            {/* 3. Query Params Navigation */}
+            <section className="text-center space-y-2">
+                <p className="text-xl font-semibold text-gray-800">✅ 3. Navigation with Query Parameters</p>
+                <p className="text-gray-600">
+                    📌 Example: Navigate to <code>/profile?name=Zohaib</code>
+                </p>
+
+                <Link
+                    href={{ pathname: '/profile', query: { name: 'Zohaib' } }}
+                    className="inline-block bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded-md shadow transition"
+                >
+                    👤 Profile
+                </Link>
+
+                <pre className="bg-gray-800 text-white rounded-xl px-4 py-3 text-left overflow-x-auto whitespace-pre-wrap">
+                    <code>{queryParameters}</code>
+                </pre>
+            </section>
         </div>
     );
 };

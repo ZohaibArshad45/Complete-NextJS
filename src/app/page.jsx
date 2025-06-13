@@ -10,6 +10,7 @@ const PageLinks = [
   { name: "Learn Sever-Side vs Client-Side", links: "learn-sever-&-client" },
   { name: "Learn Routing (App Router)", links: "learn-about-routing" },
   { name: "learn Link Navigation Router", links: "learn-link-navigation" },
+  { name: "Parmas, usePathname, searchParams, usesearchParams", links: "learn-how-get-url-data" },
 ]
 
 
@@ -47,10 +48,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <div className="bg-cyan-700 hover:bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          <Link href="/urlData">Parmas, usePathname, searchParams, usesearchParams</Link>
-        </div> */}
 
         {/* <div className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/nested-routing">Nested Routing</Link>
