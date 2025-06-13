@@ -9,6 +9,7 @@ const PageLinks = [
   { name: "Learn Event - Function & States", links: "learnEventFunctionStates" },
   { name: "Learn Sever-Side vs Client-Side", links: "learn-sever-&-client" },
   { name: "Learn Routing (App Router)", links: "learn-about-routing" },
+  { name: "learn Link Navigation Router", links: "learn-link-navigation" },
 ]
 
 
@@ -23,6 +24,13 @@ export default function Home() {
   // const navLink = (nav) => {
   //   router.push(nav)
   // }
+
+  // Reusable navigation function
+  // const navigateTo = (path) => {
+  //     router.push(path);
+  // };
+  // <button onClick={() => navigateTo('/static-html-page')}>Go</button>
+
 
 
   return (
@@ -43,11 +51,7 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <div className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          <Link href="/learnLinkNavigation">Learn Navigation</Link>
-        </div> */}
-
+        
         {/* <div className="bg-cyan-700 hover:bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/urlData">Parmas, usePathname, searchParams, usesearchParams</Link>
         </div> */}
