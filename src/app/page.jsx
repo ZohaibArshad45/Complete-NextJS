@@ -10,8 +10,9 @@ const PageLinks = [
   { name: "Learn Sever-Side vs Client-Side", links: "learn-sever-&-client" },
   { name: "Learn Routing (App Router)", links: "learn-about-routing" },
   { name: "learn Link Navigation Router", links: "learn-link-navigation" },
-  { name: "Parmas, usePathname, searchParams, usesearchParams", links: "learn-how-get-url-data" },
+  { name: "Parmas, useParams, usePathname, searchParams, usesearchParams", links: "learn-how-get-url-data" },
   { name: "Nested Routing and layout ", links: "learn-nested-routing-&-layout" },
+  { name: "Nested  dynamic routes", links: "learn-dynamic-routes" },
 ]
 
 
@@ -49,14 +50,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <div onClick={dynamicRoute} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-        Dynamic Routes
-        </div> */}
-
-        {/* <div onClick={() => router.push('/dynamic-routes')} className="bg-red-500 hover:bg-red-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Dynamic Routes
-        </div> */}
 
         {/* <div onClick={() => router.push('/catch-all-routing')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Catch All Routing

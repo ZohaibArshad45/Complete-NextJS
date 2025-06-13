@@ -1,14 +1,20 @@
 'use client';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { useParams, usePathname, useSearchParams } from 'next/navigation';
 
 const ClientSideParams = () => {
   const pathname = usePathname();
   const search = useSearchParams();
+  const uParams = useParams ()
 
   console.log('Pathname:', pathname);
   console.log('Search Params:', search.toString());
   console.log('Name:', search.get('name'));
 
+
+  const useParamCode = `  import { useParamsrams } from 'next/navigation';
+  const uParams = useParams ()
+  <p>{uParams.clientside}</p>
+`
   const pathnameCode = `'use client'
 import { usePathname } from 'next/navigation';
 
@@ -36,6 +42,13 @@ const name = search.get('name');
 
       {/* Pathname Section */}
       <section className="space-y-3 max-w-3xl mx-auto bg-green-50 border border-green-200 p-6 rounded-xl shadow">
+        <h2 className="text-xl font-semibold text-green-700">
+         🔹 You can also get url with useParams on client side
+        </h2>
+        <p>using useParams Url = {uParams.clientside}</p>
+        <pre className="bg-gray-800 text-white p-4 rounded-xl overflow-x-auto text-sm whitespace-pre-wrap">
+          <code>{useParamCode}</code>
+        </pre>
         <h2 className="text-xl font-semibold text-green-700">
           🔹 Pathname: <span className="font-mono">{pathname}</span>
         </h2>
