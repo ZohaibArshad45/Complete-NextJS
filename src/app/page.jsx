@@ -13,28 +13,11 @@ const PageLinks = [
   { name: "Parmas, useParams, usePathname, searchParams, usesearchParams", links: "learn-how-get-url-data" },
   { name: "Nested Routing and layout ", links: "learn-nested-routing-&-layout" },
   { name: "Nested  dynamic routes", links: "learn-dynamic-routes" },
+  { name: "Learn Catch All Routing", links: "learn-catch-all-routing" },
 ]
 
 
 export default function Home() {
-
-  // const router = useRouter();
-
-  // // const dynamicRoute = ()=>{
-  // //   router.push('/dynamic-routes')
-  // // }
-
-  // const navLink = (nav) => {
-  //   router.push(nav)
-  // }
-
-  // Reusable navigation function
-  // const navigateTo = (path) => {
-  //     router.push(path);
-  // };
-  // <button onClick={() => navigateTo('/static-html-page')}>Go</button>
-
-
 
   return (
     <div className=" flex flex-col items-center p-6 pb-14">
@@ -50,10 +33,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <div onClick={() => router.push('/catch-all-routing')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Catch All Routing
-        </div> */}
 
         {/* <button onClick={() => router.push('/error-not-found-page')} className="bg-gray-600 hover:bg-gray-800 text-white py-3 px-6 rounded-lg shadow-md transition">
           404 Error
