@@ -45,10 +45,10 @@ const RoutingInfo = () => {
                         Internal routing ke liye <code className="bg-gray-100 px-1 py-0.5 rounded text-sm text-green-700">Link</code> component use hota hai from <code>next/link</code>.
                     </p>
                     <div className="flex gap-4 mt-2">
-                        <Link href="/about" className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                        <Link href="/learn-link-navigation" className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition">
                             About Page
                         </Link>
-                        <Link href="/contact" className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                        <Link href="/learn-link-navigation" className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition">
                             Contact Page
                         </Link>
                     </div>

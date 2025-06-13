@@ -35,23 +35,19 @@ export default function Home() {
 
   return (
     <div className=" flex flex-col items-center p-6 pb-14">
-
       <h1 className="font-extrabold text-4xl mb-8 drop-shadow-md">
         🚀 Home Page
       </h1>
-
       <div className=" text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
 
         {
           PageLinks.map((L, i) => (
             <Link key={i} href={L.links} className="bg-white rounded-xl shadow-md p-5 border hover:shadow-lg transition">
-
               {L.name}
-
             </Link>
           ))
         }
-        
+
         {/* <div className="bg-cyan-700 hover:bg-cyan-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           <Link href="/urlData">Parmas, usePathname, searchParams, usesearchParams</Link>
         </div> */}
