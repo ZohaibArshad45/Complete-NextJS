@@ -16,6 +16,7 @@ const PageLinks = [
   { name: "Learn Catch All Routing", links: "learn-catch-all-routing" },
   { name: "Error 404 Page not found", links: "error-not-found-page" },
   { name: "Learn Middleware", links: "middleware" },
+  { name: "Learn About Rendering", links: "rendering-overview" },
 ]
 
 
@@ -35,10 +36,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => router.push('/middleware')} className="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Middleware
-        </button> */}
 
         {/* <button onClick={() => router.push('/learn-ClientSideDataFetch')} className="bg-teal-500 hover:bg-teal-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Client-Side API Fetch
