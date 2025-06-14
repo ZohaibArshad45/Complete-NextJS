@@ -15,6 +15,7 @@ const PageLinks = [
   { name: "Nested  dynamic routes", links: "learn-dynamic-routes" },
   { name: "Learn Catch All Routing", links: "learn-catch-all-routing" },
   { name: "Error 404 Page not found", links: "error-not-found-page" },
+  { name: "Learn Middleware", links: "middleware" },
 ]
 
 
