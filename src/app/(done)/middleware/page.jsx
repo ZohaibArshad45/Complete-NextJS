@@ -47,46 +47,67 @@ const LearnMiddleWare = () => {
             </section>
 
             {/* Use Case */}
-            <section className="bg-white rounded-lg shadow p-6 space-y-4">
+                        <section className="bg-white rounded-lg shadow p-6 space-y-4">
                 <h2 className="text-xl font-bold text-blue-600">🔐 Example Use Case: Authentication</h2>
-                <p className="text-gray-800 mt-2">
-                    Middleware can be used to check if a user is logged in. If not, it redirects them to a login page.
+                <p className="text-gray-800">
+                    Middleware can check if a user is logged in using cookies or headers.
+                    If not logged in, redirect to `/login` or `/` page.
                 </p>
 
-                <pre className="bg-black text-white rounded-md p-4 overflow-x-auto">
-                    <code>
-                        {`import { NextResponse } from 'next/server';
+                <pre className="bg-black text-white rounded-md p-4 overflow-x-auto text-sm">
+{`import { NextResponse } from 'next/server';
 
 export function middleware(request) {
   const token = request.cookies.get('authToken');
 
   if (!token) {
-    return NextResponse.redirect('/login');
+    return NextResponse.redirect(new URL('/', request.url));
   }
 
   return NextResponse.next();
 }`}
-                    </code>
                 </pre>
-                <pre className="bg-black text-white rounded-md p-4 overflow-x-auto">
-                    <code>
-                        {`import { NextResponse } from "next/server";
-                        
-let login = true; // Let user login status
-                        
+
+                <p className="text-gray-700">
+                    ✅ <code>req.nextUrl.pathname != "/"</code> condition is important to avoid **infinite redirects**.
+                </p>
+
+                <pre className="bg-black text-white rounded-md p-4 overflow-x-auto text-sm">
+{`import { NextResponse } from "next/server";
+
+// Simulated user login status (replace with real logic later)
+let login = true;
+
 export function middleware(req) {
-if (!login) {
-// Redirect to home page if not logged in
-return NextResponse.redirect(new URL('/', req.url));
-}
-return NextResponse.next(); // Allow access if logged in
+  if (!login && req.nextUrl.pathname !== "/") {
+    return NextResponse.redirect(new URL('/', req.url));
+  }
+  return NextResponse.next();
 }
 
-// Apply middleware to /pay and all subroutes
+// ⚠️ Without this pathname check (req.nextUrl.pathname !== "/"), it will keep redirecting to '/' infinitely
+`}
+                </pre>
+            </section>
+
+            {/* For Specific Routes Only */}
+            <section className="bg-white rounded-lg shadow p-6 space-y-4">
+                <h2 className="text-xl font-bold text-blue-600">📍 Target Middleware to Specific Routes</h2>
+                <p className="text-gray-700">You can apply middleware only to a specific route like a payment or dashboard page.</p>
+
+                <pre className="bg-black text-white rounded-md p-4 overflow-x-auto text-sm">
+{`import { NextResponse } from "next/server";
+
+export function middleware(req) {
+  return NextResponse.redirect(new URL('/', req.url));
+}
+
 export const config = {
-matcher: ["/pay/:path*"], 
-};`}
-                    </code>
+  matcher: ["/pay/:path*"], 
+  // ✅ Apply middleware to pay route /:path* all subroutes
+  // ✅ Only run on /pay or subroutes like /pay/confirm
+};
+`}
                 </pre>
             </section>
 
