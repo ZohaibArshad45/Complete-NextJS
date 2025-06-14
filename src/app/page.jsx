@@ -14,6 +14,7 @@ const PageLinks = [
   { name: "Nested Routing and layout ", links: "learn-nested-routing-&-layout" },
   { name: "Nested  dynamic routes", links: "learn-dynamic-routes" },
   { name: "Learn Catch All Routing", links: "learn-catch-all-routing" },
+  { name: "Error 404 Page not found", links: "error-not-found-page" },
 ]
 
 
@@ -33,10 +34,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => router.push('/error-not-found-page')} className="bg-gray-600 hover:bg-gray-800 text-white py-3 px-6 rounded-lg shadow-md transition">
-          404 Error
-        </button> */}
 
         {/* <button onClick={() => router.push('/middleware')} className="bg-yellow-700 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           Middleware
