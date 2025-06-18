@@ -15,7 +15,7 @@ const ClientSideDataFetch = () => {
             }
         }
         getUser();
-    }, []); // ✅ Fixed missing square brackets in useEffect()
+    }, []); // ✅ square brackets in useEffect()
 
     return (
         <div className="flex flex-col items-center min-h-screen bg-gray-100 p-6">

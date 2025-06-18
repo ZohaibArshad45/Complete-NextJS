@@ -17,6 +17,13 @@ const PageLinks = [
   { name: "Error 404 Page not found", links: "error-not-found-page" },
   { name: "Learn Middleware", links: "middleware" },
   { name: "Learn About Rendering", links: "rendering-overview" },
+  { name: "Server-Side API Fetch", links: "learn-ServerSiderDataFetch" },
+  // { name: "Client-Side API Fetch", links: "learn-ClientSideDataFetch" },
+  // { name: "Project 1", links: "project-1" },
+  // { name: "Image Optimization", links: "learn-image-Optimization" },
+  // { name: "Font Optimization", links: "learn-font-optomization" },
+  // { name: "Development vs Production", links: "development-production" },
+  // { name: "Dynamic Metadata", links: "dynamic-metadata" },
 ]
 
 
@@ -36,34 +43,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => router.push('/learn-ClientSideDataFetch')} className="bg-teal-500 hover:bg-teal-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Client-Side API Fetch
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-ServerSiderDataFetch')} className="bg-indigo-500 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Server-Side API Fetch
-        </button> */}
-
-        {/* <button onClick={() => navLink('/project-1')} className="bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Project 1
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-image-Optimization')} className="bg-cyan-500 hover:bg-cyan-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Image Optimization
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-font-optomization')} className="bg-lime-500 hover:bg-lime-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Font Optimization
-        </button> */}
-
-        {/* <button onClick={() => navLink('/development-production')} className="bg-rose-500 hover:bg-rose-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Development vs Production
-        </button> */}
-
-        {/* <button onClick={() => navLink('/dynamic-metadata')} className="bg-violet-500 hover:bg-violet-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Dynamic Metadata
-        </button> */}
 
         {/* <button onClick={() => navLink('/script-components')} className="bg-emerald-700 hover:bg-emerald-500 text-white py-3 px-6 rounded-lg shadow-md transition">
           Script Components
