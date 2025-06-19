@@ -19,7 +19,7 @@ const PageLinks = [
   { name: "Learn About Rendering", links: "rendering-overview" },
   { name: "Server-Side API Fetch", links: "learn-ServerSiderDataFetch" },
   { name: "Client-Side API Fetch", links: "learn-ClientSideDataFetch" },
-  // { name: "Project 1", links: "project-1" },
+  { name: "Project 1", links: "project-1" },
   // { name: "Image Optimization", links: "learn-image-Optimization" },
   // { name: "Font Optimization", links: "learn-font-optomization" },
   // { name: "Development vs Production", links: "development-production" },
