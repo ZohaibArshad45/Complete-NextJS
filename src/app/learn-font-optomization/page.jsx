@@ -1,43 +1,46 @@
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
-    subsets: ['latin'],
-    weight: '800',
-    display: 'swap'
+  subsets: ['latin'],
+  weight: '800',
+  display: 'swap',
 });
 
 export default function Home() {
-    return (
-        <div className={`${poppins.className} p-6 bg-gray-100 min-h-screen`}>
-            <h1 className="text-3xl font-bold text-blue-600 mb-4">
-                Hello, Next.js with Google Font! 👋
-            </h1>
+  return (
+    <div className={`${poppins.className} min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-8`}>
+      {/* Heading */}
+      <h1 className="text-4xl font-extrabold text-blue-600 mb-6">
+        👋 Hello, Next.js with Google Fonts
+      </h1>
 
-            {/* Benefits Section */}
-            <h2 className="text-2xl font-semibold text-gray-800">🔥 Benefits of Using next/font/google:</h2>
-            <ul className="list-disc pl-6 mt-2 text-gray-700">
-                <li>✅ <strong>Automatic Optimization</strong> – Loads only required font styles.</li>
-                <li>✅ <strong>No Flash of Unstyled Text (FOUT)</strong> – Reduces layout shift.</li>
-                <li>✅ <strong>Self-hosted Fonts</strong> – Improves performance (No external request to Google).</li>
-                <li>✅ <strong>Preloading Enabled</strong> – Fonts are loaded faster.</li>
-                <li>✅ <strong>Easier to Use</strong> – No need to manually add <code>&lt;link&gt;</code> tags.</li>
-            </ul>
+      {/* Benefits Section */}
+      <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          🔥 Faiday of using <code className="bg-gray-100 px-2 py-0.5 rounded text-sm">next/font/google</code>
+        </h2>
+        <ul className="space-y-3 text-gray-700 text-base pl-5 list-disc">
+          <li>✅ <strong>Automatic Optimization:</strong> Sirf wohi font styles load hongi jo zarurat ho</li>
+          <li>✅ <strong>No FOUT:</strong> Flash of Unstyled Text nahi aayega (layout shift avoid)</li>
+          <li>✅ <strong>Self-hosted:</strong> Google se direct link nahi, aapki site pe fonts load honge – zyada fast 🚀</li>
+          <li>✅ <strong>Preloading:</strong> Fonts jaldi load ho jaate hain – performance better</li>
+          <li>✅ <strong>Asaan Usage:</strong> Manually <code className="bg-gray-100 px-1 rounded">&lt;link&gt;</code> tag dena nahi padta</li>
+        </ul>
+      </div>
 
-            <br />
+      {/* Code Example */}
+      <div className="bg-gray-900 text-green-400 rounded-2xl shadow-lg p-6 overflow-x-auto">
+        <h2 className="text-xl font-semibold mb-4 text-white">📌 Kaise Use Kare Google Fonts in Next.js</h2>
+        <pre className="text-sm leading-relaxed">
+<code>{`import { Poppins } from 'next/font/google';
 
-            {/* Usage Instructions */}
-            <h2 className="text-2xl font-semibold text-gray-800">📌 How to Use Google Fonts in Next.js</h2>
-            <pre className="bg-gray-900 text-white p-4 rounded-lg mt-2">
-                <code>
-                    {`import { Poppins } from 'next/font/google';
-
-const poppins = Poppins({ 
-    subsets: ['latin'],
-    weight: '900',
-    display: 'swap'
-});`}
-                </code>
-            </pre>
-        </div>
-    );
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '900',
+  display: 'swap',
+});`}</code>
+        </pre>
+      </div>
+    </div>
+  );
 }
