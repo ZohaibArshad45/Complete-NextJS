@@ -1,16 +1,3 @@
-// ✅ SEO Metadata Function
-export function generateMetadata() {
-    return {
-        title: "🚀 My First Project",
-        description: "Yeh SEO optimization ke liye description hai.",
-        // openGraph: {
-        //     title: "🚀 My First Project",
-        //     description: "Social sharing ke liye optimize.",
-        //     type: "website",
-        // },
-    };
-}
-
 import React from "react";
 
 const DynamicMetaData = () => {
@@ -62,3 +49,17 @@ const DynamicMetaData = () => {
 };
 
 export default DynamicMetaData;
+
+
+// ✅ SEO Metadata Function
+export function generateMetadata() {
+    return {
+        title: "🚀 My First Project",
+        description: "Yeh SEO optimization ke liye description hai.",
+        // openGraph: {
+        //     title: "🚀 My First Project",
+        //     description: "Social sharing ke liye optimize.",
+        //     type: "website",
+        // },
+    };
+}
