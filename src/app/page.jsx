@@ -25,7 +25,7 @@ const PageLinks = [
   { name: "Learn Font Optimization", links: "learn-font-optomization" },
   { name: "Dynamic Metadata", links: "dynamic-metadata" },
   { name: "Script Components", links: "script-components" },
-  { name: "Loader | Show loading", links: "loader-withAPI" },
+  { name: "Loader | Show loading with API", links: "loader-withAPI" },
   // { name: "Static-Assets", links: "Static-Assets" },
   // { name: "static-html-page", links: "static-html-page" },
   // { name: "Static Side Generation SSG", links: "static-side-generation" },
