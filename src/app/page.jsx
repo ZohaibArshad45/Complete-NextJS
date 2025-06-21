@@ -23,7 +23,7 @@ const PageLinks = [
   { name: "Project 1", links: "project-1" },
   { name: "Learn Image Optimization", links: "learn-image-Optimization" },
   { name: "Learn Font Optimization", links: "learn-font-optomization" },
-  // { name: "Dynamic Metadata", links: "dynamic-metadata" },
+  { name: "Dynamic Metadata", links: "dynamic-metadata" },
 ]
 
 
