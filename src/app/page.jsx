@@ -27,7 +27,7 @@ const PageLinks = [
   { name: "Loader | Show loading with API", links: "loader-withAPI" },
   { name: "Script Components", links: "script-components" },
   { name: "Learn About Static Assets", links: "learn-static-assets" },
-  // { name: "static-html-page", links: "static-html-page" },
+  { name: "Static HTML Page", links: "static-html-page" },
   // { name: "Static Side Generation SSG", links: "static-side-generation" },
   // { name: "Learn About Redirection", links: "redirection" },
   // { name: "Environment Variables", links: "environment-variables" },
