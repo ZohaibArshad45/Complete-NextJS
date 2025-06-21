@@ -24,6 +24,13 @@ const PageLinks = [
   { name: "Learn Image Optimization", links: "learn-image-Optimization" },
   { name: "Learn Font Optimization", links: "learn-font-optomization" },
   { name: "Dynamic Metadata", links: "dynamic-metadata" },
+  { name: "Script Components", links: "script-components" },
+  { name: "Loader | Show loading", links: "loader-withAPI" },
+  // { name: "Static-Assets", links: "Static-Assets" },
+  // { name: "static-html-page", links: "static-html-page" },
+  // { name: "Static Side Generation SSG", links: "static-side-generation" },
+  // { name: "Learn About Redirection", links: "redirection" },
+  // { name: "Environment Variables", links: "environment-variables" },
 ]
 
 
@@ -43,34 +50,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => navLink('/script-components')} className="bg-emerald-700 hover:bg-emerald-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Script Components
-        </button> */}
-
-        {/* <button onClick={() => navLink('/loader-withAPI')} className="bg-blue-700 hover:bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Loader | Show loading
-        </button> */}
-
-        {/* <button onClick={() => navLink('/Static-Assets')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Static-Assets
-        </button> */}
-
-        {/* <button onClick={() => navLink('/static-html-page')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Static Html Page
-        </button> */}
-
-        {/* <button onClick={() => navLink('/static-side-generation')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Static Side Generation SSG
-        </button> */}
-
-        {/* <button onClick={() => navLink('/redirection')} className="bg-blue-400 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Learn About Redirection
-        </button> */}
-
-        {/* <button onClick={() => navLink('/environment-variables')} className="bg-lime-700 hover:bg-lime-500 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Environment Variables
-        </button> */}
 
         {/* <button onClick={() => navLink('/learn-1firstroute')} className="bg-yellow-500 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Route API (Backend 1)
