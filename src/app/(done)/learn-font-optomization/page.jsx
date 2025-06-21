@@ -38,7 +38,11 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: '900',
   display: 'swap',
-});`}</code>
+});
+
+    <div className={$poppins.className min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-8}> </div >
+
+`}</code>
         </pre>
       </div>
     </div>
