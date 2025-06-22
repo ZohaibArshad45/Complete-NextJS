@@ -29,7 +29,7 @@ const PageLinks = [
   { name: "Learn About Static Assets", links: "learn-static-assets" },
   { name: "Static HTML Page", links: "static-html-page" },
   { name: "Static Side Generation (SSG)", links: "static-side-generation" },
-  // { name: "Learn About Redirection", links: "redirection" },
+  { name: "Learn About Redirection", links: "redirection" },
   // { name: "Environment Variables", links: "environment-variables" },
 ]
 
