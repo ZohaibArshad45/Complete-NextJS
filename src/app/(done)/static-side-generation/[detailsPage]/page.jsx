@@ -1,10 +1,14 @@
 import React from 'react'
-import getDataAPI from '../../../../services/page'
+import getDataAPI from '../../../../../services/page'
 
 // const StaticDetails = async (props) => { 
-// console.log(props.params.detailPage)
-// const usercheck = props.params.detailsPage
+//     const data = await getDataAPI()
+//     const usercheck = props.params.detailsPage
+//     // console.log(props.params.detailsPage)
 
+
+// props ki jagah destructuring ({ params }) use karna best practice hai — 
+// especially in Next.js 13/14+ App Router.
 const StaticDetails = async ({ params }) => {
     const data = await getDataAPI() // getDataAPI function hum ny servers (Src sy baher) ma banaya howa ha
 
@@ -13,7 +17,7 @@ const StaticDetails = async ({ params }) => {
 
     return (
         <>
-            <h1>Static User Info : </h1>
+            <h1>Static User Info :: </h1>
             <h1>Username : {userID.username}</h1>
             <h1>Name : {userID.name}</h1>
             <h1>Email : {userID.email}</h1>
@@ -38,7 +42,7 @@ export const generateStaticParams = async () => {
     const data = await getDataAPI() // getDataAPI function hum ny servers (Src sy baher) ma banaya howa ha
 
     return data.map((data) => ({ //her page return krny lia map use kry gy
-        id: data.id.toString()  // id int ma hoti ha,, to is string ma convert krny ky lia tostring use kry gy
+        detailsPage: data.id.toString()  // id int ma hoti ha,, to is string ma convert krny ky lia tostring use kry gy
         //detailsPage: user.id.toString(), // Ensure key matches the dynamic route `[detailsPage]`
 
     }))
