@@ -30,7 +30,7 @@ const PageLinks = [
   { name: "Static HTML Page", links: "static-html-page" },
   { name: "Static Side Generation (SSG)", links: "static-side-generation" },
   { name: "Learn About Redirection", links: "redirection" },
-  // { name: "Environment Variables", links: "environment-variables" },
+  { name: "Environment Variables", links: "environment-variables" },
 ]
 
 
