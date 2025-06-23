@@ -31,8 +31,11 @@ const PageLinks = [
   { name: "Static Side Generation (SSG)", links: "static-side-generation" },
   { name: "Learn About Redirection", links: "redirection" },
   { name: "Environment Variables", links: "environment-variables" },
+  
+  // { name: "Route API (Backend 1)", links: "learn-1firstroute" },
+  // { name: "GET API Static (Backend 2)", links: "learn-GET-API" },
+  // { name: "POST API Static (Backend 3)", links: "learn-POST-API" },
 ]
-
 
 export default function Home() {
 
@@ -50,19 +53,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => navLink('/learn-1firstroute')} className="bg-yellow-500 hover:bg-yellow-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Route API (Backend 1)
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-GET-API')} className="bg-orange-500 hover:bg-orange-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          GET API Static (Backend 2)
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-POST-API')} className="bg-pink-500 hover:bg-pink-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          POST API Static (Backend 3)
-        </button> */}
-
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
           Integration Static POST API with FE (Backend 4)
