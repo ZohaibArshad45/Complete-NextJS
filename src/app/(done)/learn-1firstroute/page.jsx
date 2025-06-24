@@ -4,26 +4,44 @@ import Link from 'next/link';
 const Learn1FirstRoute = () => {
   const FAPIROUTER = `
 // ✅ API Route in Next.js (app/api/firstroute/route.js)
+//1️⃣ Normal Function (not arrow)
+// export async function GET() {
+//   return new Response("✅ Normal Named Function");
+// }
+
+//2️⃣ Simple Arrow Function (Shortest)
 // export const GET = ()=>{
 //     return new Response("he")
 // }
 
+//3️⃣ Async Arrow Function
+// export const GET = async () => {
+//   return new Response("✅ Async Arrow Function");
+// };
+
+//4️⃣ With request parameter
+//export const GET = async (request) => {
+//   return new Response("✅ With Request Object");
+// };
+
+
+//5️⃣ Return JSON using NextResponse.json()
 import { NextResponse } from "next/server";
 
 // Handle GET requests
 export const GET = () => {
-  return NextResponse.json([
-    {
-      name: 'Zohaib',
-      age: 24,
-      location: "Bahawalpur"
-    },
-    {
-      name: 'Ali',
-      age: 24,
-      location: "Bahawalpur"
-    }
-  ]);
+    return NextResponse.json([
+        {
+            name: 'Zohaib',
+            age: 24,
+            location: "Bahawalpur"
+        },
+        {
+            name: 'Zohan',
+            age: 24,
+            location: "Bahawalpur"
+        }
+    ]);
 };
 `;
 
@@ -53,7 +71,7 @@ export const GET = () => {
       <br /> <br />
 
       <h2 className="text-lg font-semibold text-gray-600">📜 Example API Route Code:</h2>
-      <pre className="bg-gray-800 text-white w-full rounded-lg p-2 overflow-x-auto">
+      <pre className="bg-gray-800 text-green-600 w-full rounded-xl p-2 overflow-x-auto">
         <code>{FAPIROUTER}</code>
       </pre>
     </div>
