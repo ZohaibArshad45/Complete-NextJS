@@ -31,9 +31,9 @@ const PageLinks = [
   { name: "Static Side Generation (SSG)", links: "static-side-generation" },
   { name: "Learn About Redirection", links: "redirection" },
   { name: "Environment Variables", links: "environment-variables" },
-  
+
   { name: "Route API (Backend 1)", links: "learn-1firstroute" },
-  // { name: "GET API Static (Backend 2)", links: "learn-GET-API" },
+  { name: "GET API => Local-data (Backend 2)", links: "learn-GET-API" },
   // { name: "POST API Static (Backend 3)", links: "learn-POST-API" },
 ]
 

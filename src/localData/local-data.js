@@ -1,9 +1,9 @@
-export const employee = [
+export const local_employee = [
     {
         id : 1,
         name : "Zohaib",
         age : 23,
-        email : "ABC@gamil.com"
+        email : "zohaibfta@gamil.com"
     },
     {
         id : 2,

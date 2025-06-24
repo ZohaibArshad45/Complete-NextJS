@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { employee } from "@/db/db"
+import { local_employee } from "../../../localData/local-data";
 
 export const GET = ()=>{
-    const data = employee;
+    const data = local_employee;
     return NextResponse.json(data, {status: 200})
 }
