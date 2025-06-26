@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const PageLinks = [
   { name: "Learn before React & Nextjs", links: "learn-before-nextjs" },
@@ -38,6 +37,9 @@ const PageLinks = [
   { name: "POST API with FE (Backend 4)", links: "learn-POST-API-Fb" },
   { name: "DELETE API Static (Backend 5)", links: "learn-Delete-API" },
   { name: "DELETE API with FE (Backend 6)", links: "learn-Delete-API-Fb" },
+  { name: "PUT API Static (Backend 7)", links: "learn-PUT-API" },
+  { name: "PUT API with FE (Backend 8)", links: "learn-PUT-API-Fb" },
+  { name: "Catch All API (Backend 9)", links: "learn-catch-all-API" },
 ]
 
 export default function Home() {
@@ -47,8 +49,8 @@ export default function Home() {
       <h1 className="font-extrabold text-4xl mb-8 drop-shadow-md">
         🚀 Home Page
       </h1>
-      <div className=" text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
 
+      <div className=" text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-4xl">
         {
           PageLinks.map((L, i) => (
             <Link key={i} href={L.links} className="bg-white rounded-xl shadow-md p-5 border hover:shadow-lg transition">
@@ -56,18 +58,14 @@ export default function Home() {
             </Link>
           ))
         }
+      </div>
+    </div>
+  );
+}
 
-        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Learn PUT API Static (Backend 7)
-        </button> */}
 
-        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration Static PUT API (Backend 8)
-        </button> */}
 
-        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Catch All API (Backend 9)
-        </button> */}
+
 
         {/* <button onClick={() => navLink('/mongoDB-connection')} className="bg-violet-800 hover:bg-violet-600 text-white py-3 px-6 rounded-lg shadow-md transition">
         MongoDB Connection
@@ -84,8 +82,3 @@ export default function Home() {
         {/* <button onClick={() => navLink('/mongodb-GET-FE')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
         MongoDB GET Method Frontend integration
         </button> */}
-
-      </div>
-    </div>
-  );
-}
