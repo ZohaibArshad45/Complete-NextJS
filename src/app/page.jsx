@@ -37,7 +37,7 @@ const PageLinks = [
   { name: "POST API => Static (Backend 3)", links: "learn-POST-API" },
   { name: "POST API with FE (Backend 4)", links: "learn-POST-API-Fb" },
   { name: "DELETE API Static (Backend 5)", links: "learn-Delete-API" },
-  // { name: "Integration Static DELETE API (Backend 6)", links: "waiting" },
+  { name: "DELETE API with FE (Backend 6)", links: "learn-Delete-API-Fb" },
 ]
 
 export default function Home() {
