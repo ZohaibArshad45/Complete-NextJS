@@ -35,6 +35,9 @@ const PageLinks = [
   { name: "Route API (Backend 1)", links: "learn-1firstroute" },
   { name: "GET API => Static (Backend 2)", links: "learn-GET-API" },
   { name: "POST API => Static (Backend 3)", links: "learn-POST-API" },
+  { name: "POST API with FE (Backend 4)", links: "learn-POST-API-Fb" },
+  // { name: "DELETE API Static (Backend 5)", links: "learn-Delete-API" },
+  // { name: "Integration Static DELETE API (Backend 6)", links: "waiting" },
 ]
 
 export default function Home() {
@@ -53,18 +56,6 @@ export default function Home() {
             </Link>
           ))
         }
-
-        {/* <button onClick={() => navLink('/waiting')} className="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration Static POST API with FE (Backend 4)
-        </button> */}
-
-        {/* <button onClick={() => navLink('/learn-Delete-API')} className="bg-pink-800 hover:bg-pink-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          DELETE API Static (Backend 5)
-        </button> */}
-
-        {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-          Integration Static DELETE API (Backend 6)
-        </button> */}
 
         {/* <button onClick={() => navLink('/waiting')} className="bg-cyan-800 hover:bg-cyan-600 text-white py-3 px-6 rounded-lg shadow-md transition">
           Learn PUT API Static (Backend 7)
