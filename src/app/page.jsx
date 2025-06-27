@@ -34,12 +34,12 @@ const PageLinks = [
   { name: "Route API (Backend 1)", links: "learn-1firstroute" },
   { name: "GET API => Static (Backend 2)", links: "learn-GET-API" },
   { name: "POST API => Static (Backend 3)", links: "learn-POST-API" },
-  { name: "POST API with FE (Backend 4)", links: "learn-POST-API-Fb" },
-  { name: "DELETE API Static (Backend 5)", links: "learn-Delete-API" },
-  { name: "DELETE API with FE (Backend 6)", links: "learn-Delete-API-Fb" },
-  { name: "PUT API Static (Backend 7)", links: "learn-PUT-API" },
-  { name: "PUT API with FE (Backend 8)", links: "learn-PUT-API-Fb" },
-  { name: "Catch All API (Backend 9)", links: "learn-catch-all-API" },
+  // { name: "POST API with FE (Backend 4)", links: "learn-POST-API-Fb" },
+  // { name: "DELETE API Static (Backend 5)", links: "learn-Delete-API" },
+  // { name: "DELETE API with FE (Backend 6)", links: "learn-Delete-API-Fb" },
+  // { name: "PUT API Static (Backend 7)", links: "learn-PUT-API" },
+  // { name: "PUT API with FE (Backend 8)", links: "learn-PUT-API-Fb" },
+  // { name: "Catch All API (Backend 9)", links: "learn-catch-all-API" },
 ]
 
 export default function Home() {
