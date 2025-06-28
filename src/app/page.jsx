@@ -40,6 +40,12 @@ const PageLinks = [
   // { name: "PUT API Static (Backend 7)", links: "learn-PUT-API" },
   // { name: "PUT API with FE (Backend 8)", links: "learn-PUT-API-Fb" },
   // { name: "Catch All API (Backend 9)", links: "learn-catch-all-API" },
+
+  { name: "MongoDB Connection", links: "mongoDB-connection" },
+  // { name: "MongoDB POST Method", links: "mongodb-POST" },
+  // { name: "MongoDB POST Method Frontend integration", links: "mongodb-post-FE" },
+  // { name: "MongoDB GET Method Frontend integration", links: "mongodb-GET-FE" },
+
 ]
 
 export default function Home() {
@@ -62,23 +68,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-
-
-        {/* <button onClick={() => navLink('/mongoDB-connection')} className="bg-violet-800 hover:bg-violet-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        MongoDB Connection
-        </button> */}
-
-        {/* <button onClick={() => navLink('/mongodb-POST')} className="bg-blue-800 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        MongoDB POST Method
-        </button> */}
-
-        {/* <button onClick={() => navLink('/mongodb-post-FE')} className="bg-red-800 hover:bg-red-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        MongoDB POST Method Frontend integration
-        </button> */}
-
-        {/* <button onClick={() => navLink('/mongodb-GET-FE')} className="bg-yellow-800 hover:bg-yellow-600 text-white py-3 px-6 rounded-lg shadow-md transition">
-        MongoDB GET Method Frontend integration
-        </button> */}
