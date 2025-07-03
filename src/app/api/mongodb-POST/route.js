@@ -9,7 +9,7 @@
 //     const newUser = new userModel({
 //         "name" : "Ali",
 //         "role" : "Tester",
-//         "Skills" : "PyTest"
+//         "skills" : "PyTest"
 //     })
 
 //     const user = await newUser.save()
@@ -28,5 +28,5 @@ export const POST = async (req) => {
         const newUser = new userModel(payload);
         const user = await newUser.save();
 
-        return NextResponse.json({ result: user }, { status: 200 });
+        return NextResponse.json({ result: user, success: true });
 };
