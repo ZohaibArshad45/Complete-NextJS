@@ -41,7 +41,7 @@ const PageLinks = [
   // { name: "PUT API with FE (Backend 8)", links: "learn-PUT-API-Fb" },
   // { name: "Catch All API (Backend 9)", links: "learn-catch-all-API" },
 
-  { name: "How MongoDB Connect", links: "mongoDB-connection" },
+  { name: "How MongoDB Connect", links: "learn-mongodb-connect" },
   // { name: "MongoDB POST Method", links: "mongodb-POST" },
   // { name: "MongoDB POST Method Frontend integration", links: "mongodb-post-FE" },
   // { name: "MongoDB GET Method Frontend integration", links: "mongodb-GET-FE" },

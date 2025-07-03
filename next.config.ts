@@ -5,6 +5,10 @@ const nextConfig = {
     domains: ["images.pexels.com"],
   },
   // "output" : "export"
+
+  experimental: {
+    turbo: false, // Disable Turbopack
+  },
  
   redirects : async()=>{
     return [
