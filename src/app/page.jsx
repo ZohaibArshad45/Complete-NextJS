@@ -43,8 +43,8 @@ const PageLinks = [
 
   { name: "How mongodb connect", links: "learn-mongodb-connect" },
   { name: "MongoDB POST Method", links: "mongodb-POST" },
-  { name: "MongoDB POST Method FI", links: "mongodb-post-FE" },
-  // { name: "MongoDB GET Method Frontend integration", links: "mongodb-GET-FE" },
+  { name: "MongoDB POST Method FE", links: "mongodb-post-FE" },
+  { name: "MongoDB GET Method FE", links: "mongodb-GET-FE" },
 
 ]
 
