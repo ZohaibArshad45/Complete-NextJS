@@ -28,7 +28,8 @@ const MongodbPostFE = () => {
 
     const handlebtn = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/mongodb-POST', {
+            // const response = await fetch('http://localhost:3000/api/mongodb-POST', {
+            const response = await fetch('https://complete-nextjs-ten.vercel.app/api/mongodb-POST', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -99,7 +100,8 @@ const MongodbPostFE = () => {
 
     const handlebtn = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/mongodb-POST', {
+            // const response = await fetch('http://localhost:3000/api/mongodb-POST', {
+            const response = await fetch('https://complete-nextjs-ten.vercel.app/api/mongodb-POST', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
