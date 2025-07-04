@@ -56,9 +56,9 @@ const MongodbGETFE = async () => {
 
     return (
         <div className="p-6 min-h-screen bg-white text-black">
-            <h2 className="text-2xl font-bold mb-6 text-center">📦 Fetched Users</h2>
+            {/* <h2 className="text-2xl font-bold mb-6 text-center">📦 Fetched Users</h2> */}
 
-            <div className="max-w-2xl mx-auto space-y-4">
+            {/* <div className="max-w-2xl mx-auto space-y-4">
                 {data.length > 0 ? (
                     data.map((d, i) => (
                         <div key={i} className="border border-gray-300 p-4 rounded shadow-sm">
@@ -70,7 +70,7 @@ const MongodbGETFE = async () => {
                 ) : (
                     <p className="text-center text-red-500">No data found</p>
                 )}
-            </div>
+            </div> */}
 
             <div className="mt-10">
                 <h3 className="text-lg font-semibold mb-2">🔧 Backend Code (GET API)</h3>
