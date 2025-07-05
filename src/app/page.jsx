@@ -45,6 +45,7 @@ const PageLinks = [
   { name: "MongoDB POST Method", links: "mongodb-POST" },
   { name: "MongoDB POST Method FE", links: "mongodb-post-FE" },
   { name: "MongoDB GET Method FE", links: "mongodb-GET-FE" },
+  { name: "MongoDB PUT Method", links: "mongodb-PUT" },
 
 ]
 
